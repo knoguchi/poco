@@ -1,5 +1,6 @@
 version: poco-{branch}-{build}
-
+image:
+  - Visual Studio 2019
 install:
   - cinst cmake
 
