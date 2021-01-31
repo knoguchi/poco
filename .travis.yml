@@ -27,6 +27,8 @@ jobs:
           - platform-tools
       install:
         - echo y | sdkmanager "cmake;3.10.2.4988404"
+        - echo $PATH
+        - which cmake
         - android list targets
       before_script:
         - echo no | android create avd --force -n test -t android-24 --abi armeabi-v7a -c 100M
